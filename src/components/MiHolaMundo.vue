@@ -1,6 +1,9 @@
 <script setup>
 // Importa la imagen usando la ruta relativa
 import miLogoPerro from '../assets/logoPerro.png';
+import Sambi from '../assets/Sambi.png';
+import Kayn from '../assets/Kayn.png';
+import Lya from '../assets/Lya.png';
 </script>
 <!-- ESTRUCTURA -->
 <template>
@@ -74,11 +77,12 @@ import miLogoPerro from '../assets/logoPerro.png';
         </div>
     </nav>
     <body class="bg-sulu-200">
+        <!-- Seccion de Header con Imagen -->
         <section class="text-gray-600 bg-sulu-300">
             <div class="container mx-auto flex md:px-10 md:py-1 md:flex-row flex-col items-center">
                 <div class="lg:flex-grow mt-5 md:mt-0 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1
-                        class="text-2xl font-extrabold leading-9 mb-3 text-sulu-600 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
+                        class="text-4xl font-extrabold mb-3 text-sulu-600">
                         Nuestras mascotas!
                     </h1>
                     <p class="mb-8 md:pl-0 pl-2 pr-2 leading-relaxed text-sulu-600">
@@ -103,67 +107,43 @@ import miLogoPerro from '../assets/logoPerro.png';
                 </div>
             </div>
         </section>
-        <section>
-            <div class="max-w-7xl mx-auto">
-                <!-- Header Section -->
-                <h1 class="text-2xl font-extrabold p-10 mb-3 text-sulu-600 sm:text-4xl sm:leading-10 md:text-5xl md:leading-normal">
-                    ¡Conócenos, que no mordemos!</h1>
-
-                <!-- Cards Container -->
-                <div class="flex flex-wrap justify-center gap-6 p-3">
-                <!-- Card 1 -->
-                <div class="bg-sulu-300 shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col">
-                    <img src="https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722165/AbhirajK/Abhirajk.webp" alt="Card Image 1" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Card Title 1</h2>
-                    <p class="text-gray-600 mt-2">This is a sample description for card 1. Tailored for responsive designs using Tailwind CSS.</p>
-                    </div>
+        <!-- Seccion de Galeria de Animales -->
+        <h1
+            class="text-4xl font-extrabold p-5 mb-3 text-sulu-600">
+            Conócenos, que no mordemos!
+        </h1>
+        <section class="flex gap-[40px] flex-wrap justify-center items-center p-10">
+            <div>
+                <div class="card">
+                <div class="object-none">
+                    <img 
+                    :src="Sambi" 
+                    alt="Foto Sambi en Galeria">
                 </div>
-
-                <!-- Card 2 -->
-                <div class="bg-sulu-300 shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col">
-                    <img src="https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722163/AbhirajK/Abhirajk%20mykare.webp" alt="Card Image 2" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Card Title 2</h2>
-                    <p class="text-gray-600 mt-2">This is a sample description for card 2. The card adjusts well across different screen sizes.</p>
-                    </div>
+                <p class="card-title">Sambi Antonia Erices</p>
+                <p class="footer">Escrito por <span class="by-name">Juan Erices</span> el <span class="date">13/06/25</span></p>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="bg-sulu-300 shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col">
-                    <img src="https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk2.webp" alt="Card Image 3" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Card Title 3</h2>
-                    <p class="text-gray-600 mt-2">This is a sample description for card 3. Styled using Tailwind CSS for an elegant look.</p>
-                    </div>
+            </div>
+            <div>
+                <div class="card">
+                <div class="object-none">
+                    <img 
+                    :src="Kayn" 
+                    alt="Foto Kayn en Galeria">
                 </div>
-
-                <!-- Card 4 -->
-                <div class="bg-sulu-300 shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col">
-                    <img src="https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722161/AbhirajK/Abhirajk3.webp" alt="Card Image 4" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Card Title 4</h2>
-                    <p class="text-gray-600 mt-2">This is a sample description for card 4. Flexbox ensures the layout remains clean and organized.</p>
-                    </div>
+                <p class="card-title">Kayn Furia Del Sol Erices</p>
+                <p class="footer">Escrito por <span class="by-name">Juan Erices</span> el <span class="date">13/06/25</span></p>
                 </div>
-
-                <!-- Card 5 -->
-                <div class="bg-sulu-300 shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col">
-                    <img src="https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722160/AbhirajK/Abhirajk4.webp" alt="Card Image 5" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Card Title 5</h2>
-                    <p class="text-gray-600 mt-2">This is a sample description for card 5. Mobile-first design approach for better responsiveness.</p>
-                    </div>
+            </div>
+            <div>
+                <div class="card">
+                <div class="object-none">
+                    <img 
+                    :src="Lya" 
+                    alt="Foto Lya en Galeria">
                 </div>
-
-                <!-- Card 6 -->
-                <div class="bg-sulu-300 shadow-md rounded-lg overflow-hidden max-w-sm flex flex-col">
-                    <img src="https://res.cloudinary.com/djv4xa6wu/image/upload/v1735722159/AbhirajK/Abhirajk5.webp" alt="Card Image 6" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                    <h2 class="text-lg font-semibold text-gray-800">Card Title 6</h2>
-                    <p class="text-gray-600 mt-2">This is a sample description for card 6. Built with hardcoded HTML and Tailwind CSS classes.</p>
-                    </div>
-                </div>
+                <p class="card-title">Lya Matrona Erices</p>
+                <p class="footer">Escrito por <span class="by-name">Juan Erices</span> el <span class="date">13/06/25</span></p>
                 </div>
             </div>
         </section>
@@ -182,5 +162,47 @@ export default {
 
 <!-- ESTILOS -->
 <style scoped>
+/* From Uiverse.io by Sashank02 */ 
+.card {
+  padding: 20px;
+  width: 330px;
+  min-height: 200px;
+  border-radius: 20px;
+  background: #bef264;
+  box-shadow: 5px 5px 6px #6ca30d,
+               -3px -3px 3px #ffffff6e;
+  transition: 0.4s;
+}
 
+.card:hover {
+  translate: 0 -10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e54a7;
+  margin: 10px 0 0 10px;
+}
+
+.card-image {
+  background-color: #c9c9c9;
+}
+
+.card-body {
+  margin: 13px 0 0 10px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+}
+
+.footer {
+  float: center;
+  margin: 10px 0 0 10px;
+  font-size: 13px;
+  color: #636363;
+}
+
+.by-name {
+  font-weight: 700;
+}
 </style>

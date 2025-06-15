@@ -1,4 +1,4 @@
-# mi-primer-proyecto-vue
+# my-animals-vue
 
 ## Project setup
 ```
